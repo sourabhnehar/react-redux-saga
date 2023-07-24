@@ -26,9 +26,20 @@ const { cart } = useSelector((state) => state);
   return (
     <div style={headerStyle}>
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <Link to='/' style={menuItemStyle}>Home</Link>
-        <Link to='/cart' style={menuItemStyle}>Cart ({cart.length})</Link>
+        <Link to='/' style={menuItemStyle}>
+          Home
+        </Link>
+        <Link to='/cart' style={menuItemStyle}>
+          Cart ({cart.length})
+        </Link>
+        <Link to='/login' style={menuItemStyle}>
+          login
+      </Link>
+      <Link to='/signup' style={menuItemStyle}>
+          Signup
+      </Link>
       </div>
+     
     </div>
   );
 }
