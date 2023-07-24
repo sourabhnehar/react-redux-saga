@@ -56,25 +56,14 @@ const Header = () => {
         <Link to='/cart' style={menuItemStyle}>
           Cart ({cart.length})
         </Link>
+        <Link to='/login' style={menuItemStyle}>
+          login
+      </Link>
+      <Link to='/signup' style={menuItemStyle}>
+          Signup
+      </Link>
       </div>
-      <div style={searchBoxStyle}>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          height='24'
-          viewBox='0 0 24 24'
-          width='24'
-          fill='#333'
-        >
-          <path d='M0 0h24v24H0z' fill='none' />
-          <path d='M15.5 14h-.79l-.28-.27C16.41 12.61 17 11.11 17 9.5 17 5.91 14.09 3 10.5 3S4 5.91 4 9.5 6.91 16 10.5 16c1.61 0 3.11-.59 4.23-1.57l.27.28v.79l4 3.99L18.49 18l-3.99-4zm-5 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' />
-        </svg>
-        <input
-          type='text'
-          placeholder='Search...'
-          style={inputStyle}
-          onChange={handleSearchProduct}
-        />
-      </div>
+     
     </div>
   );
 };

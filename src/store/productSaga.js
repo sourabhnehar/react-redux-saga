@@ -8,6 +8,7 @@ function* getProduct() {
 }
 
 function* productSaga() {
+  console.log('test')
   yield takeEvery(PRODUCT_LIST, getProduct);
 }
 
